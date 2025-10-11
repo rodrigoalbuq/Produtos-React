@@ -1,0 +1,162 @@
+/* Formulário de produto */
+.formulario-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.formulario-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.formulario-produto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Grupos de campos */
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-grupo label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Inputs e textarea */
+.campo-grupo input,
+.campo-grupo textarea {
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.campo-grupo input:focus,
+.campo-grupo textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Estados de erro */
+.campo-grupo input.error,
+.campo-grupo textarea.error {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Textarea específico */
+.campo-grupo textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+/* Botão de adicionar */
+.btn-adicionar {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+  justify-self: center;
+  min-width: 200px;
+}
+
+.btn-adicionar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.btn-adicionar:active {
+  transform: translateY(-1px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .formulario-produto {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .formulario-container {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+  
+  .formulario-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .campo-grupo input,
+  .campo-grupo textarea {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-adicionar {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Placeholders */
+.campo-grupo input::placeholder,
+.campo-grupo textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Animação de entrada */
+.formulario-container {
+  animation: slideInFromTop 0.6s ease-out;
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

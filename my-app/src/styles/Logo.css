@@ -1,0 +1,73 @@
+/* Logo da loja */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.logo-icon:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.logo-text {
+  text-align: left;
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.brand-tagline {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 2px 0 0 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .logo-text {
+    text-align: center;
+  }
+  
+  .brand-name {
+    font-size: 2rem;
+  }
+  
+  .brand-tagline {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.8rem;
+  }
+}
