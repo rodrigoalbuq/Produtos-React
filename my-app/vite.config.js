@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Set base for GitHub Pages (repo name)
-  base: '/Produtos-React/',
+  // Dynamic base: GitHub Pages uses repo path; Vercel uses '/'
+  base: process.env.VITE_BASE || '/',
   plugins: [react()],
 })

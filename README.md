@@ -1,8 +1,6 @@
 # Produtos React
 
-![Deploy status](https://github.com/rodrigoalbuq/Produtos-React/actions/workflows/deploy.yml/badge.svg)
-
-Aplicação React (Vite) localizada em `my-app`, pronta para deploy automático via GitHub Pages.
+Aplicação React (Vite) localizada em `my-app`
 
 ## Rodando localmente
 
