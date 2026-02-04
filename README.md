@@ -19,18 +19,6 @@ npm run build
 
 Os arquivos estáticos serão gerados em `my-app/dist`.
 
-## Deploy no GitHub Pages
-
-- O workflow em [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) compila e publica automaticamente ao fazer push na branch `main`.
-- O `vite.config.js` define `base: '/Produtos-React/'` para servir corretamente os assets no Pages.
-- A página publicada ficará em: https://rodrigoalbuq.github.io/Produtos-React/
-  - Após o primeiro deploy, o link acima ficará ativo.
-
-### Passos para ativar o Pages
-
-1. No GitHub, acesse Settings → Pages.
-2. Em "Build and deployment", selecione "Source: GitHub Actions".
-3. Salve. A cada push na `main`, o workflow fará o deploy.
 
 ## Estrutura
 
