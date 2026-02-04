@@ -1,5 +1,7 @@
 # Produtos React
 
+![Deploy status](https://github.com/rodrigoalbuq/Produtos-React/actions/workflows/deploy.yml/badge.svg)
+
 Aplicação React (Vite) localizada em `my-app`, pronta para deploy automático via GitHub Pages.
 
 ## Rodando localmente
@@ -24,6 +26,7 @@ Os arquivos estáticos serão gerados em `my-app/dist`.
 - O workflow em [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) compila e publica automaticamente ao fazer push na branch `main`.
 - O `vite.config.js` define `base: '/Produtos-React/'` para servir corretamente os assets no Pages.
 - A página publicada ficará em: https://rodrigoalbuq.github.io/Produtos-React/
+  - Após o primeiro deploy, o link acima ficará ativo.
 
 ### Passos para ativar o Pages
 
