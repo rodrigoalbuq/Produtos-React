@@ -26,6 +26,6 @@ Os arquivos estáticos serão gerados em `my-app/dist`.
   - `src/` — componentes, páginas e estilos
   - `index.html`, `vite.config.js`, `package.json`
 
-## Documentação da aplicação
 
-Veja instruções detalhadas em [my-app/README.md](my-app/README.md).
+
+
