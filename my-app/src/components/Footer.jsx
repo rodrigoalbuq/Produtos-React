@@ -102,7 +102,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <div className="footer-bottom-content">
-                    <p>&copy; {currentYear} TechStore | Desenvolvido por Rodrigo Albuquerque | Todos os direitos reservados.</p>
+                    <p>&copy; {currentYear} TechStore | Desenvolvido por Rodrigo Albuquerques | Todos os direitos reservados.</p>
                     <div className="footer-bottom-links">
                         <a href="#privacidade">Política de Privacidade</a>
                         <a href="#termos">Termos de Uso</a>
