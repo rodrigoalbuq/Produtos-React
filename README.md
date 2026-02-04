@@ -1,6 +1,12 @@
-# Produtos React
+## Descrição
 
-Aplicação React (Vite) localizada em `my-app`
+Aplicação de catálogo de produtos. Inclui componentes para exibir cards de produtos (`ProdutoCard`), um formulário para cadastro/edição (`FormularioProduto`) e uma página de listagem (`CatalogoProdutos`). É uma SPA construída com React e Vite.
+
+## Tecnologias
+
+- React 19
+- Vite 7
+- ESLint (plugins React Hooks e React Refresh)
 
 ## Rodando localmente
 
